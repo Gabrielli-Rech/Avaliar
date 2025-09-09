@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Zone - Sua plataforma de reviews</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../app/static/css/index.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <a href="#" class="logo">
+                <i class="fas fa-star"></i>
+                Score<span>Zone</span>
+            </a>
+
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Itens</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Listas</a></li>
+                    <li><a href="#">Categorias</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <div class="search-bar">
+                    <input type="text" placeholder="Buscar...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+
+                <div class="user-actions">
+                    <a href="#"><i class="fas fa-sign-in-alt"></i> Entrar</a>
+                    <a href="#"><i class="fas fa-user-plus"></i> Registrar</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Descubra, Avalie, Compartilhe</h1>
+            <p>O Score Zone é sua plataforma para descobrir novos jogos, filmes, séries e livros, além de compartilhar
+                suas opiniões com uma comunidade de entusiastas.</p>
+            <a href="#" class="btn">
+                <i class="fas fa-rocket"></i> Começar agora
+            </a>
+        </div>
+    </section>
+
+    <!-- Featured Items -->
+    <section class="container">
+        <h2 class="section-title">Em Destaque</h2>
+
+        <div class="items-grid">
+            <!-- Item 1 -->
+            <div class="item-card">
+                <div class="item-badge">NOVO</div>
+                <div class="item-image">
+                    <img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="Red Dead Redemption 2">
+                    <div class="item-overlay">
+                        <div class="rating">
+                            <i class="fas fa-star"></i> 9.8
+                        </div>
+                    </div>
+                </div>
+                <div class="item-info">
+                    <h3 class="item-title">Red Dead Redemption 2</h3>
+                    <div class="item-meta">
+                        <span>2018</span>
+                        <span>Ação / Aventura</span>
+                    </div>
+                    <span class="item-category">Jogo</span>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="item-card">
+                <div class="item-image">
+                    <img src="https://images.unsplash.com/photo-1489599851395-2e636569c976?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="Interestelar">
+                    <div class="item-overlay">
+                        <div class="rating">
+                            <i class="fas fa-star"></i> 9.5
+                        </div>
+                    </div>
+                </div>
+                <div class="item-info">
+                    <h3 class="item-title">Interestelar</h3>
+                    <div class="item-meta">
+                        <span>2014</span>
+                        <span>Ficção Científica</span>
+                    </div>
+                    <span class="item-category">Filme</span>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="item-card">
+                <div class="item-badge">POPULAR</div>
+                <div class="item-image">
+                    <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="O Hobbit">
+                    <div class="item-overlay">
+                        <div class="rating">
+                            <i class="fas fa-star"></i> 9.3
+                        </div>
+                    </div>
+                </div>
+                <div class="item-info">
+                    <h3 class="item-title">O Hobbit</h3>
+                    <div class="item-meta">
+                        <span>1937</span>
+                        <span>Fantasia / Aventura</span>
+                    </div>
+                    <span class="item-category">Livro</span>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="item-card">
+                <div class="item-image">
+                    <img src="https://images.unsplash.com/photo-1596829608327-63d01523e6a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="Stranger Things">
+                    <div class="item-overlay">
+                        <div class="rating">
+                            <i class="fas fa-star"></i> 9.2
+                        </div>
+                    </div>
+                </div>
+                <div class="item-info">
+                    <h3 class="item-title">Stranger Things</h3>
+                    <div class="item-meta">
+                        <span>2016</span>
+                        <span>Terror / Ficção</span>
+                    </div>
+                    <span class="item-category">Série</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Reviews -->
+    <section class="container">
+        <h2 class="section-title">Reviews Recentes</h2>
+
+        <div class="reviews-list">
+            <!-- Review 1 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                        alt="User" class="user-avatar">
+                    <div class="user-info">
+                        <div class="user-name">Carlos Silva</div>
+                        <div class="review-date">2 dias atrás</div>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i> 9.5
+                    </div>
+                </div>
+                <h4 class="review-item">The Last of Us Part II</h4>
+                <p class="review-text">Uma experiência emocional intensa com jogabilidade refinada. A narrativa é
+                    corajosa e não tem medo de tomar riscos, mesmo que divisivos. Os gráficos são espetaculares e a
+                    trilha sonora é perfeita.</p>
+                <div class="review-images">
+                    <div class="review-image">
+                        <img src="https://images.unsplash.com/photo-1592155931584-901ac15763e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                            alt="Review image">
+                    </div>
+                    <div class="review-image">
+                        <img src="https://images.unsplash.com/photo-1607853554432-64b57b564739?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                            alt="Review image">
+                    </div>
+                    <div class="review-image">
+                        <img src="https://images.unsplash.com/photo-1607853554432-64b57b564739?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                            alt="Review image">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                        alt="User" class="user-avatar">
+                    <div class="user-info">
+                        <div class="user-name">Marina Oliveira</div>
+                        <div class="review-date">5 dias atrás</div>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i> 10
+                    </div>
+                </div>
+                <h4 class="review-item">O Senhor dos Anéis: A Sociedade do Anel</h4>
+                <p class="review-text">Uma obra-prima absoluta do cinema fantástico. A adaptação de Peter Jackson
+                    captura perfeitamente a essência da Terra-média com atuações memoráveis e efeitos visuais
+                    impressionantes.</p>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <img src="https://images.unsplash.com/photo-1624298357597-fd92dfbec01d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                        alt="User" class="user-avatar">
+                    <div class="user-info">
+                        <div class="user-name">João Santos</div>
+                        <div class="review-date">1 semana atrás</div>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i> 9.7
+                    </div>
+                </div>
+                <h4 class="review-item">1984</h4>
+                <p class="review-text">Assustadoramente relevante mesmo décadas após sua publicação. A visão distópica
+                    de Orwell sobre vigilância, controle de informação e manipulação é uma leitura essencial para nossos
+                    tempos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="container">
+        <h2 class="section-title">Categorias Populares</h2>
+
+        <div class="categories">
+            <button class="category-btn active">Todos</button>
+            <button class="category-btn">Ação</button>
+            <button class="category-btn">Terror</button>
+            <button class="category-btn">Comédia</button>
+            <button class="category-btn">Drama</button>
+            <button class="category-btn">Aventura</button>
+            <button class="category-btn">Ficção Científica</button>
+            <button class="category-btn">RPG</button>
+            <button class="category-btn">Fantasia</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Score Zone</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Sobre nós</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Contato</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Termos de uso</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Política de privacidade</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Descobrir</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Jogos</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Filmes</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Séries</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Livros</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Comunidade</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Reviews</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Listas</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Fóruns</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Eventos</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Conectar</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> YouTube</a></li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                &copy; 2023 Score Zone. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+    <script src="../app/static/js/index.js"></script>
+</body>
+
+</html>

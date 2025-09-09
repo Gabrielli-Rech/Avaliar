@@ -1,0 +1,13 @@
+# Banco de dados
+SQLAlchemy==2.0.28
+PyMySQL==1.1.1
+
+# Segurança (hash de senha)
+passlib[bcrypt]==1.7.5
+
+# Framework web (Flask, caso queira API)
+Flask==2.3.4
+Flask-Cors==3.0.10
+
+# Outros utilitários
+python-dotenv==1.0.0  # se quiser usar .env pra variáveis de ambiente
